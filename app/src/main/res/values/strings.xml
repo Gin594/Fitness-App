@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">CSE110Project</string>
+    <string name="title_home">Home</string>
+    <string name="title_routes">Routes</string>
+    <string name="save">Save</string>
+
+
+    <!--Home screen-->
+    <string name="welcome">Welcome</string>
+    <string name="steps">Steps: </string>
+    <string name="dist">Dist: </string>
+    <string name="new_walk">Start new Walk</string>
+    <string name="finish_walk">Finish Walk</string>
+    <string name="userJsonData"></string>
+    <string name="demo">Demo</string>
+
+
+
+
+    <string-array name="direction_array">
+        <item>loop</item>
+        <item>out and back</item>
+    </string-array>
+
+    <string-array name="surface_array">
+        <item>flat</item>
+        <item>hilly</item>
+    </string-array>
+
+    <string-array name="difficulty_array">
+        <item>easy</item>
+        <item>difficult</item>
+        <item>moderate</item>
+    </string-array>
+
+    <!-->what's this?<-->
+    <string-array name="trail_array">
+        <item>trail</item>
+        <item>streets</item>
+    </string-array>
+
+    <string-array name="consistency_array">
+        <item>even</item>
+        <item>uneven</item>
+    </string-array>
+
+</resources>

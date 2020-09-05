@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/team_navigation"
+    app:startDestination="@+id/team_navigation_members">
+
+    <fragment
+        android:id="@+id/team_navigation_members"
+        android:name="com.example.cse110project.ui.Team.TeamMembersFragment"
+        android:label="Members"
+        tools:layout="@layout/team_fragment_members" />
+
+    <fragment
+        android:id="@+id/team_navigation_proposed_walks"
+        android:name="com.example.cse110project.ui.Team.ProposedWalkFragments"
+        android:label="Proposed Walks"
+        tools:layout="@layout/team_fragment_proposed_walks" />
+</navigation>

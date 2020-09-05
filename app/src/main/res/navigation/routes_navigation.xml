@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/team_navigation"
+    app:startDestination="@+id/routes_navigation_my_routes">
+
+    <fragment
+        android:id="@+id/routes_navigation_my_routes"
+        android:name="com.example.cse110project.ui.routes.MyRoutesFragment"
+        android:label="My Routes"
+        tools:layout="@layout/routes_fragment_my_routes" />
+
+    <fragment
+        android:id="@+id/routes_navigation_team_routes"
+        android:name="com.example.cse110project.ui.routes.TeamRoutesFragment"
+        android:label="Team Routes"
+        tools:layout="@layout/routes_fragment_team_routes" />
+</navigation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="73dp">
+
+    <Button
+        android:id="@+id/member_icon"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_rounded_shape"
+        android:clickable="false"
+        android:text=": )"
+        android:textSize="20sp"
+        android:translationX="12dp"
+        android:translationY="13dp"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/proposedWalkCellUsername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_home"
+        android:textSize="20sp"
+        android:translationX="70dp"
+        android:translationY="5dp" />
+
+    <TextView
+        android:id="@+id/proposedWalkCellSubHead"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_home"
+        android:textSize="20sp"
+        android:translationX="70dp"
+        android:translationY="35dp" />
+</RelativeLayout>

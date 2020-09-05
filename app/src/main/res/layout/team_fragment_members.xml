@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/team_fragment_members">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_team_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/search_container"
+        android:layout_width="314dp"
+        android:layout_height="91dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        android:visibility="invisible">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_add_team_member_edit_text"
+            android:layout_width="203dp"
+            android:layout_height="80dp"
+            android:hint="Enter an email address"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:maxLines="1"
+            android:translationX="3dp"
+            android:translationY="5dp" />
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/email_add_team_member_edit_text"-->
+<!--            android:layout_width="203dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="gmail"-->
+<!--            android:inputType="text"-->
+<!--            android:maxLines="1"-->
+<!--            android:translationX="3dp"-->
+<!--            android:translationY="40dp" />-->
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="95dp"
+            android:layout_height="43dp"
+            android:text="@android:string/search_go"
+            android:translationX="210dp"
+            android:translationY="5dp" />
+
+        <Button
+            android:id="@+id/cancel_search_button"
+            android:layout_width="95dp"
+            android:layout_height="43dp"
+            android:text="@android:string/cancel"
+            android:translationX="210dp"
+            android:translationY="40dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ListView
+        android:id="@+id/team_fragment_listView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"></ListView>
+
+    <ImageButton
+        android:id="@+id/TeamMemberRefresh"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        android:clickable="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>
